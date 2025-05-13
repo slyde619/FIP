@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced JavaScript - Array Methods</title>
+    <link rel="stylesheet" href="./app.css" />
+  </head>
+  <body>
+    <header>
+      <h1>ES6 Features & Array Methods</h1>
+      <p>Week 1 Assignment - Intermediate Web Development</p>
+    </header>
+
+    <main>
+      <section class="container">
+        <div class="container-top">
+            <h2>Original Array</h2>
+            <div class="array-container code-display" id="originalArray"></div>
+        </div>
+
+        <h2>Array Methods Demonstration</h2>
+
+        <div class="method-container">
+          <h3>Map</h3>
+          <p>Transforms each element in an array and returns a new array.</p>
+          <button id="mapBtn">Run map()</button>
+          <div class="result" id="mapResult"></div>
+          <div class="code-display">
+            <pre><code>const doubled = numbers.map(num => num * 2);</code></pre>
+          </div>
+        </div>
+
+        <div class="method-container">
+          <h3>Filter</h3>
+          <p>Creates a new array with elements that pass the test.</p>
+          <button id="filterBtn">Run filter()</button>
+          <div class="result" id="filterResult"></div>
+          <div class="code-display">
+            <pre><code>const evenNumbers = numbers.filter(num => num % 2 === 0);</code></pre>
+          </div>
+        </div>
+
+        <div class="method-container">
+          <h3>Reduce</h3>
+          <p>Reduces an array to a single value by applying a function.</p>
+          <button id="reduceBtn">Run reduce()</button>
+          <div class="result" id="reduceResult"></div>
+          <div class="code-display">
+            <pre><code>const sum = numbers.reduce((total, num) => total + num, 0);</code></pre>
+          </div>
+        </div>
+
+        <div class="method-container">
+          <h3>ForEach</h3>
+          <p>Executes a function once for each array element.</p>
+          <button id="forEachBtn">Run forEach()</button>
+          <div class="result" id="forEachResult"></div>
+          <div class="code-display">
+            <pre><code>let output = [];
+numbers.forEach(num => output.push(num * 3));</code></pre>
+          </div>
+        </div>
+
+        <div class="method-container">
+          <h3>Splice</h3>
+          <p>
+            Changes the contents of an array by removing or adding elements.
+          </p>
+          <button id="spliceBtn">Run splice()</button>
+          <div class="result" id="spliceResult"></div>
+          <div class="code-display">
+            <pre><code>const spliced = [...numbers]; // Create a copy
+spliced.splice(5, 1, 99);</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="container scope">
+        <h2>ES6 Features Demonstration</h2>
+
+        <div class="feature-container">
+          <h3>Let & Const</h3>
+          <button id="scopeBtn">Test Scope</button>
+          <div class="result" id="scopeResult"></div>
+          <div class="code-display">
+            <pre><code>// Block scope demonstration
+{
+  let blockScoped = "Only available inside this block";
+  const PI = 3.14159;
+  // PI = 4; // Would cause error - can't reassign const
+}
+// console.log(blockScoped); // Would cause error - not defined</code></pre>
+          </div>
+        </div>
+
+        <div class="feature-container">
+          <h3>Arrow Functions</h3>
+          <button id="arrowBtn">Test Arrow Functions</button>
+          <div class="result" id="arrowResult"></div>
+          <div class="code-display">
+            <pre><code>// Regular function
+function square(x) {
+  return x * x;
+}
+
+// Arrow function equivalent
+const squareArrow = x => x * x;</code></pre>
+          </div>
+        </div>
+
+        <div class="feature-container">
+          <h3>Objects</h3>
+          <button id="objectBtn">Test Objects</button>
+          <div class="result" id="objectResult"></div>
+          <div class="code-display">
+            <pre><code>// Object with shorthand properties and methods
+const name = "JavaScript";
+const version = "ES6";
+
+const language = {
+  name,  // shorthand for name: name
+  version,
+  describe() {  // shorthand method
+    return `${this.name} ${this.version}`;
+  }
+};</code></pre>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Week 1 Assignment | Intermediate Web Development Course</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
