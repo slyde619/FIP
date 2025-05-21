@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modern CSS Techniques - Showcase</title>
+    <link rel="stylesheet" href="app.css">
+  </head>
+  <body>
+    <!-- Header with Navigation -->
+    <header>
+      <div class="container">
+        <a href="#" class="logo">CSS Refresher</a>
+        <nav>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Master Modern CSS</h2>
+        <p>
+          Learn properties, selectors, text styling, box model, units, layout
+          techniques, flexbox, grid, and responsive design.
+        </p>
+        <button class="cta-btn">
+          <a href="#features" class="btn">Explore Features</a>
+          <a href="#contact" class="btn btn-secondary">Get Started</a>
+        </button>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+      <!-- Features Section -->
+      <section id="features" class="features">
+        <h2>Key CSS Features</h2>
+        <p>
+          Explore these powerful CSS techniques to create stunning and
+          responsive websites.
+        </p>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">S</div>
+            <h3>CSS Selectors</h3>
+            <p>
+              Master element, class, ID, attribute, and pseudo selectors to
+              target elements with precision.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">B</div>
+            <h3>Box Model</h3>
+            <p>
+              Understand content, padding, border, and margin to create perfect
+              layouts.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">F</div>
+            <h3>Flexbox & Grid</h3>
+            <p>
+              Use modern layout systems to create flexible and responsive
+              designs.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects">
+        <h2>Sample Projects</h2>
+        <p>
+          See CSS in action with these example projects demonstrating various
+          techniques.
+        </p>
+
+        <div class="projects-grid">
+          <div class="project-card project-featured">
+            <div
+              class="project-image"
+              style="background-image: url('https://placehold.co/600x400')"
+            ></div>
+            <div class="project-content">
+              <h3>Responsive Portfolio</h3>
+              <p>
+                A showcase of responsive design techniques using media queries,
+                flexible layouts, and relative units.
+              </p>
+              <p>
+                Features: Grid layout, flexbox navigation, custom properties,
+                and mobile-first design.
+              </p>
+              <a href="#" class="btn-link">View Project</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div
+              class="project-image"
+              style="background-image: url('https://placehold.co/250x250')"
+            ></div>
+            <div class="project-content">
+              <h3>CSS Grid Gallery</h3>
+              <p>Image gallery using CSS Grid for layout control.</p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div
+              class="project-image"
+              style="background-image: url('https://placehold.co/250x250')"
+            ></div>
+            <div class="project-content">
+              <h3>Flexbox Dashboard</h3>
+              <p>Admin interface built with flexbox for alignment.</p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div
+              class="project-image"
+              style="background-image: url('https://placehold.co/250x250')"
+            ></div>
+            <div class="project-content">
+              <h3>Typography Showcase</h3>
+              <p>Demonstrating text and font properties in CSS.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <h2>What Our Students Say</h2>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <p>
+              The CSS refresher course completely transformed my approach to web
+              design. I now understand how to create truly responsive designs
+              that work on any device.
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar"></div>
+              <div>
+                <strong>Alex</strong>
+                <p>Web Developer</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p>
+              Learning the difference between px, em, and rem units finally
+              clicked for me. The practical examples made complex concepts easy
+              to understand.
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar"></div>
+              <div>
+                <strong>Sarah</strong>
+                <p>UI Designer</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p>
+              The flexbox and grid sections alone are worth the entire course. I
+              can now create complex layouts with just a few lines of CSS.
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar"></div>
+              <div>
+                <strong>Marco</strong>
+                <p>Frontend Engineer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <div class="container">
+      <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <p>
+          Have questions about CSS? Want to start learning? Reach out to us!
+        </p>
+
+        <div class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              class="form-control"
+              placeholder="Your name"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              class="form-control"
+              placeholder="Your email"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" class="form-control">
+              <option value="">Select a subject</option>
+              <option value="question">I have a question</option>
+              <option value="feedback">I want to give feedback</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              class="form-control"
+              placeholder="Your message"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn">Send Message</button>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h3>CSS Refresher</h3>
+            <p>
+              A comprehensive guide to modern CSS techniques for creating
+              beautiful, responsive websites.
+            </p>
+          </div>
+
+          <div>
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#testimonials">Testimonials</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>CSS Topics</h3>
+            <ul>
+              <li><a href="#">CSS Properties</a></li>
+              <li><a href="#">CSS Selectors</a></li>
+              <li><a href="#">Text and Font</a></li>
+              <li><a href="#">Box Model</a></li>
+              <li><a href="#">Flexbox & Grid</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3>Connect</h3>
+            <ul>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">YouTube</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="copyright">
+          <p>&copy; 2025 CSS Refresher. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
